@@ -170,10 +170,11 @@ export default {
 .about {
   background: linear-gradient(120deg, #a6c0fe, #84fab0);
   color: #fff;
-  padding: 100px 0;
-  text-align: center;
-  padding: 100px 0;
-  background: #34c08d;
+  padding: 4rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem 2rem;
 }
 </style>
 
