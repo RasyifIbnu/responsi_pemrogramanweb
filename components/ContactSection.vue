@@ -48,6 +48,8 @@ export default {
 
 <style scoped>
 .contact-section {
+  background: linear-gradient(120deg, #a6c0fe, #84fab0);
+  color: #26bcc1;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -101,7 +103,7 @@ export default {
   display: block;
   width: 100%;
   padding: 1rem;
-  background-color: #8e44ad;
+  background-color: #000000;
   color: #fff;
   border: none;
   border-radius: 4px;

@@ -10,7 +10,7 @@
      
     </div>
     <div class="hero-image">
-      <img src="../assets/img/pp.png" alt="Design Inspiration">
+      <img src="../assets/img/ppcopy.png" alt="Design Inspiration">
     </div>
   </section>
 </template>
@@ -23,6 +23,9 @@ export default {
 
 <style scoped>
 .hero-section {
+  background: linear-gradient(120deg, #a6c0fe, #84fab0);
+  color: #fff;
+  padding: 4rem 2rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -30,6 +33,7 @@ export default {
   background-color: #15bd26;
   color: #fff;
 }
+
 
 .hero-content {
   max-width: 50%;
