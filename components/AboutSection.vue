@@ -1,14 +1,12 @@
 <template>
-  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css'>
-  <section class="about">
-   <div class="container">
-    <div class="main-body">
-    
-          <div class="row gutters-sm">
-            <div class="col-md-4 mb-3">
-              <div class="card">
-                <div class="card-body">
-                  <div class="d-flex flex-column align-items-center text-center">
+  <section id="about" class="about">
+    <div class="container">
+      <div class="main-body">
+        <div class="row gutters-sm">
+          <div class="col-md-4 mb-3">
+            <div data-aos="flip-left" class="card">
+              <div class="card-body">
+                <div class="d-flex flex-column align-items-center text-center">
                   <img src="../assets/img/ppcopy.png" alt="Admin" class="rounded-circle" style="height: 125px; width: 125px;">
                   <div class="mt-3">
                     <h4>Rasyif Ibnu Hasri</h4>
@@ -20,7 +18,7 @@
                 </div>
               </div>
             </div>
-            <div class="card mt-3">
+            <div data-aos="flip-left" class="card-b">
               <ul class="list-group list-group-flush">
                 <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
                   <h6 class="mb-0">
@@ -70,7 +68,7 @@
             </div>
           </div>
           <div class="col-md-8">
-            <div class="card mb-3">
+            <div data-aos="fade-up" class="card mb-3">
               <div class="card-body">
                 <div class="row">
                   <div class="col-sm-3">
@@ -86,7 +84,7 @@
                     <h6 class="mb-0"><i class="fas fa-envelope mr-2"></i>Email</h6>
                   </div>
                   <div class="col-sm-9 text-secondary">
-                    rasyifibnu23@gmail.com
+                    Lifeb0uy@gmail.com
                   </div>
                 </div>
                 <hr>
@@ -119,28 +117,29 @@
                 <hr>
               </div>
             </div>
-            <div class="row gutters-sm">
+            <div data-aos="fade-down" class="row gutters-sm">
               <div class="col-sm-12 mb-3">
                 <div class="card h-100 shadow-sm">
                   <div class="card-body">
                     <h6 class="d-flex align-items-center mb-3"><i class="fas fa-tools mr-2"></i>My Skills</h6>
-                    <small>Web Design</small>
-                    <div class="progress mb-3" style="height: 10px">
-                      <div class="progress-bar bg-success" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <small>Website Markup</small>
-                    <div class="progress mb-3" style="height: 10px">
-                      <div class="progress-bar bg-info" role="progressbar" style="width: 72%" aria-valuenow="72" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <small>One Page</small>
-                    <div class="progress mb-3" style="height: 10px">
-                      <div class="progress-bar bg-warning" role="progressbar" style="width: 89%" aria-valuenow="89" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <small>Mobile Template</small>
-                    <div class="progress mb-3" style="height: 10px">
-                      <div class="progress-bar bg-danger" role="progressbar" style="width: 55%" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <small>Backend API</small>
+                    <div class="skill">
+                      <h6>Web Design <span class="float-right">80%</span></h6>
+                      <div class="progress mb-3" style="height: 10px">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                      <h6>Website Markup <span class="float-right">72%</span></h6>
+                      <div class="progress mb-3" style="height: 10px">
+                        <div class="progress-bar bg-info" role="progressbar" style="width: 72%" aria-valuenow="72" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                      <h6>One Page <span class="float-right">89%</span></h6>
+                      <div class="progress mb-3" style="height: 10px">
+                        <div class="progress-bar bg-warning" role="progressbar" style="width: 89%" aria-valuenow="89" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                      <h6>Mobile Template <span class="float-right">55%</span></h6>
+                      <div class="progress mb-3" style="height: 10px">
+                        <div class="progress-bar bg-danger" role="progressbar" style="width: 55%" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                      <h6>Backend API <span class="float-right">66%</span></h6>
                       <div class="progress mb-3" style="height: 10px">
                         <div class="progress-bar bg-primary" role="progressbar" style="width: 66%" aria-valuenow="66" aria-valuemin="0" aria-valuemax="100"></div>
                       </div>
@@ -148,34 +147,57 @@
                   </div>
                 </div>
               </div>
-
-
-
             </div>
           </div>
-
         </div>
+      </div>
     </div>
-   
   </section>
 </template>
 
 <script>
 export default {
-  name: 'AboutSection'
+  name: 'AboutSection',
+  mounted() {
+    // Memastikan AOS diinisialisasi setelah komponen dimuat
+    this.$nextTick(() => {
+      this.$AOS.refresh()
+  })
+}
 }
 </script>
 
 <style scoped>
 .about {
-  background: linear-gradient(120deg, #a6c0fe, #84fab0);
+  background: linear-gradient(to right, #a6c0fe, #84fab0);
   color: #fff;
   padding: 4rem 2rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 4rem 2rem;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.2); /* Nilai alpha (0.2) menentukan tingkat transparansi */
+  border: none; /* Menghapus border pada card */
+}
+
+.skill {
+  margin-top: 20px;
+}
+
+.skill h6 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.skill .progress {
+  margin-bottom: 10px;
+}
+
+.skill .float-right {
+  font-size: 14px;
+  color: #6c757d;
 }
 </style>
-
-

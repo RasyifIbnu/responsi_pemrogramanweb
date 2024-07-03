@@ -1,6 +1,6 @@
 <template>
-  <section class="contact-section">
-    <div class="card">
+  <section  id="contact" class="contact-section">
+    <div data-aos="flip-up" class="card">
       <h2>Contact Me</h2>
       <form @submit.prevent="submitForm">
         <div class="form-group">
@@ -24,6 +24,12 @@
 <script>
 export default {
   name: 'ContactSection',
+  mounted() {
+    // Memastikan AOS diinisialisasi setelah komponen dimuat
+    this.$nextTick(() => {
+      this.$AOS.refresh()
+  })
+},
   data() {
     return {
       form: {
@@ -48,7 +54,7 @@ export default {
 
 <style scoped>
 .contact-section {
-  background: linear-gradient(120deg, #a6c0fe, #84fab0);
+  background: linear-gradient(to right, #a6c0fe, #84fab0);
   color: #26bcc1;
   display: flex;
   justify-content: center;

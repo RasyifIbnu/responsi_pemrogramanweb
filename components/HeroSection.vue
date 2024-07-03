@@ -1,15 +1,15 @@
 <template>
-  <section class="hero-section">
+  <section id="home" class="hero-section">
     <div class="hero-content">
-      <h1 class="text"><span class="highlight">Holla Amigos</span> Rasyif Ibnu</h1>
+      <h1 class="text"><span class="highlight">Holla Amigos</span> I am Rasyif Ibnu</h1>
       <p>
-       Hallo saya Ibnu AKA Kenoch ch saya adalah programer newbie <br>
-      Salam Kenal  
+       Hallo saya Ibnu AKA Kenoch ch saya adalah mahasiswa disalah satu universitas swasta terkenal di Indonesia <br>
+      Saya membuat website ini untuk sarana mengimplementasikan hasil belajar saya dalam mata kuliah Pemrograman Web.    
       </p>
-      <a class="btn btn-primary" href="http://www.youtube.com/@Nuninuch" role="button">Kenali Aku</a>
+      <a class="btn btn-primary" href="http://www.youtube.com/@Nuninuch" role="button">Channel youtube </a>
      
     </div>
-    <div class="hero-image">
+    <div data-aos="fade-up-left" class="hero-image">
       <img src="../assets/img/ppcopy.png" alt="Design Inspiration">
     </div>
   </section>
@@ -18,22 +18,30 @@
 <script>
 export default {
   name: 'HeroSection',
+  mounted() {
+    // Memastikan AOS diinisialisasi setelah komponen dimuat
+    this.$nextTick(() => {
+      this.$AOS.refresh()
+  })
+}
 }
 </script>
 
 <style scoped>
+body {
+  background: linear-gradient(to right, #a6c0fe, #84fab0); /* Set the body background to match the sections */
+  margin: 0;
+  border: none;
+}
+
 .hero-section {
-  background: linear-gradient(120deg, #a6c0fe, #84fab0);
+  background: linear-gradient(to right, #a6c0fe, #84fab0);
   color: #fff;
-  padding: 4rem 2rem;
+  padding: 10rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 4rem 2rem;
-  background-color: #15bd26;
-  color: #fff;
 }
-
 
 .hero-content {
   max-width: 50%;
@@ -53,9 +61,11 @@ export default {
   color: #ddd;
   margin: 1.5rem 0;
 }
+
 .text {
-  color:aquamarine
+  color: aquamarine;
 }
+
 .cta-button {
   padding: 1rem 2rem;
   border: 2px solid #8e44ad;
@@ -87,6 +97,5 @@ export default {
 .hero-image img {
   width: 400px;
   border-radius: 20%;
-  margin-right: 300px;
 }
 </style>

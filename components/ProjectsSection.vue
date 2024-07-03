@@ -1,5 +1,5 @@
 <template>
-  <section class="project-section py-5">
+  <section id="projects" class="project-section py-5">
     <div class="container">
       <h2 class="text-center mb-4">My Projects</h2>
       <div class="row justify-content-center">
@@ -19,24 +19,28 @@
 </template>
 
 <script>
+import Jam from '@/assets/img/jam.jpg'
+import Ai from '@/assets/img/ai.jpg'
+
 export default {
   name: 'ProjectSection',
+
   data() {
     return {
       projects: [
         {
           id: 1,
-          title: 'Project One',
-          description: 'This is a description for project one. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-          image: 'https://via.placeholder.com/300x200',
-          link: '#'
+          title: 'Simple Digital Watch',
+          description: 'Saya membuat ini untuk belajar tutorial dari Tiktok',
+          image: Jam,
+          link: 'https://github.com/RasyifIbnu/jam_digital.git'
         },
         {
           id: 2,
-          title: 'Project Two',
-          description: 'This is a description for project two. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.',
-          image: 'https://via.placeholder.com/300x200',
-          link: '#'
+          title: 'Artificial Intelligence ',
+          description: 'Saya membuat ini untuk tugas mata kuliah Kecerdasan Buatan',
+          image: Ai,
+          link: 'https://colab.research.google.com/drive/15lKWc96r2g1ZruoukbA8Wde_THRa5-Dw?usp=sharing'
         },
         // Add more projects here
       ]
@@ -47,7 +51,7 @@ export default {
 
 <style scoped>
 .project-section {
-  background: linear-gradient(120deg, #a6c0fe, #84fab0);
+  background: linear-gradient(to right, #a6c0fe, #84fab0);
   padding: 80px 0;
 }
 

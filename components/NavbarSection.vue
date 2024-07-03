@@ -18,19 +18,19 @@
 </template>
 
 <script>
-//import HeroSection from '~/components/HeroSection.vue';
-//import AboutSection from '~/components/AboutSection.vue';
-//import SkillSection from '../components/SkillSection.vue';
-//import ProjectSection from '../components/ProjectSection.vue';
-//export default {
-  //name: 'TheNavbar',
-  //components: {
-    //  HeroSection,
-      //AboutSection,
-      //SkillSection,
-      //ProjectSection
-  //}
-//}
+import HeroSection from '~/components/HeroSection.vue';
+import AboutSection from '~/components/AboutSection.vue';
+import ContactSection from './ContactSection.vue';
+import ProjectsSection from './ProjectsSection.vue';
+export default {
+  name: 'NavbarSection',
+  components: {
+        HeroSection,
+        AboutSection,
+        ContactSection,
+        ProjectsSection
+  }
+}
 </script>
 
 <style scoped>
