@@ -47,7 +47,8 @@ export default {
 
 <style scoped>
 .project-section {
-  background-color: #f9f9f9;
+  background: linear-gradient(120deg, #a6c0fe, #84fab0);
+  padding: 80px 0;
 }
 
 .card {

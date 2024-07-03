@@ -141,7 +141,7 @@
                       <div class="progress-bar bg-danger" role="progressbar" style="width: 55%" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                     <small>Backend API</small>
-                      <div class="progress mb-3" style="height: 5px">
+                      <div class="progress mb-3" style="height: 10px">
                         <div class="progress-bar bg-primary" role="progressbar" style="width: 66%" aria-valuenow="66" aria-valuemin="0" aria-valuemax="100"></div>
                       </div>
                     </div>
