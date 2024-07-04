@@ -20,16 +20,7 @@
             </div>
             <div data-aos="flip-left" class="card-b">
               <ul class="list-group list-group-flush">
-                <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
-                  <h6 class="mb-0">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-globe mr-2 icon-inline">
-                      <circle cx="12" cy="12" r="10"></circle>
-                      <line x1="2" y1="12" x2="22" y2="12"></line>
-                      <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
-                    </svg>Website
-                  </h6>
-                  <span class="text-secondary">https://bootdey.com</span>
-                </li>
+               
                 <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
                   <h6 class="mb-0">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github mr-2 icon-inline">
@@ -84,7 +75,7 @@
                     <h6 class="mb-0"><i class="fas fa-envelope mr-2"></i>Email</h6>
                   </div>
                   <div class="col-sm-9 text-secondary">
-                    Lifeb0uy@gmail.com
+                    hahabenu538@gmail.com
                   </div>
                 </div>
                 <hr>
@@ -93,7 +84,7 @@
                     <h6 class="mb-0"><i class="fas fa-phone-alt mr-2"></i>Phone</h6>
                   </div>
                   <div class="col-sm-9 text-secondary">
-                    0000000000000
+                    0812255446543
                   </div>
                 </div>
                 <hr>
@@ -102,7 +93,7 @@
                     <h6 class="mb-0"><i class="fas fa-mobile-alt mr-2"></i>Mobile</h6>
                   </div>
                   <div class="col-sm-9 text-secondary">
-                    0000000000000
+                    0812255446543
                   </div>
                 </div>
                 <hr>
@@ -131,13 +122,13 @@
                       <div class="progress mb-3" style="height: 10px">
                         <div class="progress-bar bg-info" role="progressbar" style="width: 72%" aria-valuenow="72" aria-valuemin="0" aria-valuemax="100"></div>
                       </div>
-                      <h6>One Page <span class="float-right">89%</span></h6>
+                      <h6>Python <span class="float-right">89%</span></h6>
                       <div class="progress mb-3" style="height: 10px">
                         <div class="progress-bar bg-warning" role="progressbar" style="width: 89%" aria-valuenow="89" aria-valuemin="0" aria-valuemax="100"></div>
                       </div>
-                      <h6>Mobile Template <span class="float-right">55%</span></h6>
+                      <h6>Mobile Template <span class="float-right">50%</span></h6>
                       <div class="progress mb-3" style="height: 10px">
-                        <div class="progress-bar bg-danger" role="progressbar" style="width: 55%" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+                        <div class="progress-bar bg-danger" role="progressbar" style="width: 50%" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
                       </div>
                       <h6>Backend API <span class="float-right">66%</span></h6>
                       <div class="progress mb-3" style="height: 10px">

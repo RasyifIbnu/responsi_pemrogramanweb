@@ -20,7 +20,8 @@ type NuxtAppInjections =
   InjectionType<typeof import("../../node_modules/nuxt/dist/app/plugins/dev-server-logs").default> &
   InjectionType<typeof import("../../node_modules/nuxt/dist/app/plugins/check-if-layout-used").default> &
   InjectionType<typeof import("../../plugins/bootstrap").default> &
-  InjectionType<typeof import("../../plugins/aos").default>
+  InjectionType<typeof import("../../plugins/aos").default> &
+  InjectionType<typeof import("../../plugins/fontawesome").default>
 
 declare module '#app' {
   interface NuxtApp extends NuxtAppInjections { }

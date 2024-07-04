@@ -22,13 +22,15 @@ export default {
   css: [
     '~/assets/main.css',
     'bootstrap/dist/css/bootstrap.min.css',
-    'aos/dist/aos.css'
+    'aos/dist/aos.css',
+    '@fortawesome/fontawesome-svg-core/styles.css'
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
     { src: '~/plugins/bootstrap.js', mode: 'client'},
-    { src: "~/plugins/aos.js", mode: "client"}
+    { src: "~/plugins/aos.js", mode: "client"},
+    { src: '~/plugins/fontawesome.js', mode: "client"}
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
