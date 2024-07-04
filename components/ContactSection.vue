@@ -15,13 +15,17 @@
           <label for="message">Message</label>
           <textarea id="message" v-model="form.message" required></textarea>
         </div>
-        <button type="submit" class="submit-button">Send Message</button>
+        <button class="submit-button">
+          <a type="submit" class="" href="#home">Send Message</a>
+        </button>
       </form>
     </div>
   </section>
 </template>
 
 <script>
+import HeroSection from '~/components/HeroSection.vue';
+
 export default {
   name: 'ContactSection',
   mounted() {
@@ -29,6 +33,10 @@ export default {
     this.$nextTick(() => {
       this.$AOS.refresh()
   })
+},
+
+components: {
+  HeroSection,
 },
   data() {
     return {
@@ -109,13 +117,18 @@ export default {
   display: block;
   width: 100%;
   padding: 1rem;
-  background-color: #000000;
+  background-color: #145fc2;
   color: #fff;
   border: none;
   border-radius: 4px;
   font-size: 1.2rem;
   cursor: pointer;
   transition: background-color 0.3s;
+
+  a{
+    color: #fff;
+    text-decoration: none;
+  }
 }
 
 .submit-button:hover {
