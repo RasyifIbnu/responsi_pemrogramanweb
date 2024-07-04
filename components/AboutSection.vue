@@ -12,8 +12,8 @@
                     <h4>Rasyif Ibnu Hasri</h4>
                     <p class="text-secondary mb-1">Full Stack Developer</p>
                     <p class="text-muted font-size-sm">Sragen, Central Java, Indonesia</p>
-                    <button class="btn btn-primary">Follow</button>
-                    <button class="btn btn-outline-primary">Message</button>
+                    <a href="https://github.com/RasyifIbnu" class="btn btn-primary">Follow</a>
+                    <a href="#contact" class="btn btn-outline-primary">Message</a>
                   </div>
                 </div>
               </div>
@@ -156,8 +156,12 @@
 </template>
 
 <script>
+import ContactSection from './ContactSection.vue';
 export default {
   name: 'AboutSection',
+  components: {
+        ContactSection
+  },
   mounted() {
     // Memastikan AOS diinisialisasi setelah komponen dimuat
     this.$nextTick(() => {
