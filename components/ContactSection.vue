@@ -15,9 +15,7 @@
           <label for="message">Message</label>
           <textarea id="message" v-model="form.message" required></textarea>
         </div>
-        <button class="submit-button">
-          <a type="submit" class="" href="#home">Send Message</a>
-        </button>
+        <button type="submit" class="submit-button" href="#home">Send Message</button>
       </form>
     </div>
   </section>
@@ -117,18 +115,13 @@ components: {
   display: block;
   width: 100%;
   padding: 1rem;
-  background-color: #145fc2;
+  background-color: #1649af;
   color: #fff;
   border: none;
   border-radius: 4px;
   font-size: 1.2rem;
   cursor: pointer;
   transition: background-color 0.3s;
-
-  a{
-    color: #fff;
-    text-decoration: none;
-  }
 }
 
 .submit-button:hover {
